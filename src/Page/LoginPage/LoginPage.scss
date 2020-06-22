@@ -1,0 +1,209 @@
+.login {
+    background-color: #000;
+    color: white;
+
+    .login__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Lacquer', sans-serif;
+
+    }
+
+    .login__container .content .glance .eye .shut {
+        width: 300px;
+        height: 160px;
+        position: absolute;
+        top: -160px;
+        z-index: 100;
+        /* //5px */
+        transition: .1s all;
+        transform: rotate(-45deg);
+        z-index: 100;
+        right: -50px;
+        background-color: black;
+    }
+
+    .glance.down .shut {
+        top: 5px !important;
+    }
+
+    .glance.down .ball {
+        opacity: 0 !important;
+    }
+
+    .login__container .content .glance {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: 20px;
+
+    }
+
+    .login__container .content .glance .eye {
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        background-color: #fff;
+        border-radius: 75% 0;
+        transform: rotate(45deg);
+    }
+
+    .login__container .content .glance .ball .iris {
+        width: 35px;
+        height: 35px;
+        background-color: greenyellow;
+    }
+
+    .login__container .content .glance .ball {
+        transition: .3s opacity;
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 28%;
+        left: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s all;
+        transform: translate(0, 0) rotate(45deg);
+        opacity: 1;
+    }
+
+    .ball.down {
+        opacity: 0;
+    }
+
+    /* END EYE ANIMATION */
+
+
+    form .input-group {
+        position: relative;
+    }
+
+    form {
+        box-shadow: -15px 0 50px rgba(255, 20, 152, 1), 15px 0 50px rgba(122, 0, 255, 1);
+        padding: 20px;
+        /* border: 2px solid green; */
+        border-radius: 15px;
+
+    }
+
+    form .status {
+        text-align: right;
+        margin-top: 5px;
+        color: rgba($color: #fff, $alpha: 0.4);
+        cursor: pointer;
+        &:hover{
+        color: rgba($color: #fff, $alpha: 1.0);
+
+        }
+    }
+
+    form h1 {
+        margin-bottom: 50px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    form.invalid {
+        animation: invalid .5s 3;
+    }
+
+    form .input-group {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    form .input-group input {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    form .input-group label {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: white;
+        padding: 5px;
+        pointer-events: none;
+        cursor: none;
+        font-size: 18px;
+        transition: .5s all;
+    }
+
+    form .input-group span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: pink;
+        transition: .5s all;
+    }
+
+    form .input-group b {
+        position: absolute;
+        bottom: -30px;
+        left: 10px;
+        color: red;
+        font-weight: 900;
+        transition: .3s;
+    }
+
+    form .input-group .userName:focus+label,
+    form .input-group .password:focus+label,
+    form .input-group .userName:valid+label,
+    form .input-group .password:valid+label {
+        top: -30px;
+        font-size: 14px;
+        background-color: #ff006a;
+    }
+
+    form .input-group .userName:focus~span,
+    form .input-group .password:valid~span,
+    form .input-group .userName:valid~span,
+    form .input-group .password:focus~span {
+        width: 100%;
+    }
+
+    form {
+        button {
+            border: 2px solid #ff1498 !important;
+            color: white;
+            font-size: 21px;
+            padding: 5px 20px;
+            border-radius: 5px;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    @keyframes invalid {
+
+        0%,
+        50% {
+            transform: rotate(35deg);
+        }
+
+        25%,
+        75% {
+            transform: rotate(-35deg);
+
+        }
+
+        100% {
+            transform: rotate(0);
+        }
+    }
+}

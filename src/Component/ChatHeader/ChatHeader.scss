@@ -1,0 +1,10 @@
+.chatHeader{
+    position: fixed;
+    left:400px;
+    top:0;
+    width: 100%;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+    .chatHeader__content{
+        padding-left: 50px;
+    }
+}

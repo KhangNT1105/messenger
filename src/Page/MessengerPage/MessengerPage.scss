@@ -1,0 +1,87 @@
+.messengerPage {
+
+
+    .conversation {
+        position: relative;
+        width: 73.9%;
+        left: 400px;
+        top: 86px;
+        max-height: 80vh;
+        height: 80vh;
+        overflow-y: scroll;
+
+        .conversation__content {
+            padding-left: 20px;
+            margin-top: 10px;
+            padding-top: 20px;
+            div {
+                width: 100%;
+
+                margin-bottom: 5px;
+                &.currentUser {
+                    text-align: right;
+
+
+                    span {
+                        background-color: #0084ff;
+                        display: inline-block;
+                        color: white;
+                        font-size: 17px;
+                        padding: 5px 20px;
+                        border-radius: 20px;
+
+                    }
+                }
+
+                &.otherUser {
+                    text-align: left;
+
+                    span {
+                        background-color: #f1f0f0;
+                        display: inline-block;
+                        color: black;
+                        font-size: 17px;
+                        padding: 5px 20px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .messengerPage__footer {
+        position: fixed;
+        bottom: 10px;
+        width: 72%;
+        left: 420px;
+
+        form {
+            input {
+                font-size: 18px;
+                width: 100%;
+                border-radius: 20px;
+                padding: 10px 20px;
+                outline: none;
+                border: none;
+                background-color: rgba(0, 0, 0, .05);
+                ;
+            }
+        }
+    }
+}
+
+// .col-1,
+// .col-2,
+// .col-3,
+// .col-4,
+// .col-5,
+// .col-6,
+// .col-7,
+// .col-8,
+// .col-9,
+// .col-10,
+// .col-11,
+// .col-12 {
+//     padding-right: 0;
+//     padding-left: 0;
+// }

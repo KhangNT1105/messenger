@@ -1,0 +1,47 @@
+.chatSidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .listChat {
+        border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
+        width: 100%;
+        height: 100vh;
+        padding: 0 20px;
+
+        .listChat__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            padding-inline-start: 0;
+        }
+
+        .listFriend {
+            margin-top: 50px;
+
+            .listFiend__item {
+                cursor: pointer;
+                margin-top: 30px;
+
+                .item {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        border-radius: 50%;
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

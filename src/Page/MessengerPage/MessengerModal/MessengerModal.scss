@@ -1,0 +1,30 @@
+.modalInput {
+    position: absolute;
+    top: 0;
+    left: 300px;
+
+    .connect {
+        font-size: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    .modal-body {
+        form {
+            input {
+                width: 100%;
+                padding: 5px 15px;
+            }
+
+            .buttonConnect {
+                margin-top: 20px;
+                width: 100%;
+                text-align: right;
+            }
+        }
+    }
+}
